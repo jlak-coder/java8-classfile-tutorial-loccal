@@ -1,16 +1,19 @@
 package sample;
 
-public class HelloWorld implements Cloneable {
+public class HelloWorld extends SuperClass{
     private static final int intValue = 10;
 
-    public void test() {
-        int a = 1;
-        int b = 2;
-        int c = a + b;
-    }
+    public void GuineaPig() {
 
-    public static void main(String[] args) {
-        System.out.println("HelloWorld");
+        int i = 1;
+        int j = 1;
+        int p = 1;
+        Integer it = new Integer(3000);
+        if (i < 0) {
+            // code branch to require stackmap frames
+            int k = 10;
+        }
+        this.toString();
     }
 }
 
